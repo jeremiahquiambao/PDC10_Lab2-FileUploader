@@ -10,7 +10,7 @@ if (is_uploaded_file($tmp)) {
 
   // move the file to target destination
   if (move_uploaded_file($tmp, $destination)) {
-      echo 'File has been successfully uploaded';
+      echo '<strong>This file has been successuly uploaded:</strong> ' . $_FILES['userfile']['name']; 
       exit();
   }
 }
